@@ -2,7 +2,7 @@
 - run `npm install`
 - run `npm run build-chrome`
 - Go to `chrome://extensions`, check "developer mode", and click "Load unpacked extension", and select `./shells/chrome`
-Hack away!
+- Hack away!
 
 # React Developer Tools [![Build Status](https://travis-ci.org/facebook/react-devtools.svg?branch=master)](https://travis-ci.org/facebook/react-devtools)
 
