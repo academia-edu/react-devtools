@@ -29,6 +29,7 @@
   "repository": "facebook/react-devtools",
   "scripts": {
     "lint": "./node_modules/.bin/eslint .",
+    "build-chrome": "./node_modules/.bin/webpack --config ./shells/chrome/webpack.prod.js",
     "test": "node --harmony ./node_modules/.bin/jest",
     "typecheck": "flow check"
   },
