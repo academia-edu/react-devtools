@@ -92,7 +92,7 @@ class PropState extends React.Component {
     return (
       <DetailPane
         header={'<' + this.props.node.get('name') + '>'}
-        hint="($r in the console)">
+        hint="($re in the console)">
         {key &&
           <DetailPaneSection
             title="Key"

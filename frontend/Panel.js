@@ -142,7 +142,7 @@ class Panel extends React.Component {
 
   inspectComponent(vbl: string) {
     invariant(this.props.showComponentSource, 'cannot inspect component if props.showComponentSource is not supplied');
-    this.props.showComponentSource(vbl || '$r');
+    this.props.showComponentSource(vbl || '$re');
   }
 
   viewSource(id: string) {

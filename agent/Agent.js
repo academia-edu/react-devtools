@@ -106,7 +106,7 @@ class Agent extends EventEmitter {
     this.on('selected', id => {
       var data = this.elementData.get(id);
       if (data && data.publicInstance) {
-        this.global.$r = data.publicInstance;
+        this.global.$re = data.publicInstance;
       }
     });
     this._prevSelected = null;

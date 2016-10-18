@@ -51,7 +51,7 @@ var config: Props = {
   },
   showAttrSource(path) {
     var attrs = '[' + path.map(m => JSON.stringify(m)).join('][') + ']';
-    var code = 'inspect(window.$r' + attrs + ')';
+    var code = 'inspect(window.$re' + attrs + ')';
     chrome.devtools.inspectedWindow.eval(code, (res, err) => {
       if (err) {
         console.error('Failed to inspect source', err);
@@ -60,7 +60,7 @@ var config: Props = {
   },
   executeFn(path) {
     var attrs = '[' + path.map(m => JSON.stringify(m)).join('][') + ']';
-    var code = 'window.$r' + attrs + '()';
+    var code = 'window.$re' + attrs + '()';
     chrome.devtools.inspectedWindow.eval(code, (res, err) => {
       if (err) {
         console.error('Failed to call function', err);
